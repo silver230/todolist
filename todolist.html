@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>To-do-list</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script type="text/javascript"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>TO-DO-LIST</h1>
+
+    <div class="row">
+      <div class="col-md-4">
+        <form id="new-Todolist">
+          <label for="description">DESCRIPTION
+            <br>
+            <input type="text" name="describe" id="new-description">
+          </label>
+          <br>
+          <label for="date">DATE
+            <br>
+            <input type="text" name="date" id="new-date">
+          </label>
+          <br>
+          <br>
+          <label for="time">TIME
+            <br>
+            <input type="text" name="time" id="new-time">
+          </label>
+          <br>
+          <br>
+          <button type="submit" class="btn">show</button>
+          <ul id="Todolist">
+            <div id="show-todolist">
+              <h2>must do</h2>
+
+              <p>Description: <span class="description"></span></p>
+              <p>Time: <span class="time"></span></p>
+              <p>Date: <span class="date"></span></p>
+            </div>
+        </form>
+        <h2>Todolist</h2>
+
+        </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
