@@ -6,8 +6,8 @@ function Todolist(description, date, time) {
 
 
 
-$(document).ready(function()) {
-  $("form#new-todolist").submit(function(event) {
+$(document).ready(function() {
+  $("form#new-Todolist").submit(function(event) {
 
   event.preventDefault();
 
@@ -19,16 +19,16 @@ $(document).ready(function()) {
 
   var newTodolist = new Todolist(inputtedDescription, inputtedDate, inputtedTime);
 
-  $("ul#Todolist").append("<li><span class='Todolist'>" +newTodolist.description + newTodolist.date + newTodolist.time +"</span></li>");
-  $("input#new-description").val("");
-  $("input#new-date").val("");
-  $("input#new-time").val("");
-
-
-  $(".Todolist").last().click(function() {
+  $("ul#Todolist").append("<li><span id='Todolist'>" +newTodolist.description +" " +newTodolist.date +" "+ newTodolist.time +"</span></li>");
+  // $("input#new-description").val("");
+  // $("input#new-date").val("");
+  // $("input#new-time").val("");
+  //
+  //
+  $("#Todolist").last().click(function() {
 
   $("#show-todolist").show();
-  $("#show-todolist h2").text(newContact.description);
+  // $("p.dd").text(newTodolist.description);
   $(".description").text(newTodolist.description);
   $(".time").text(newTodolist.time);
   $(".date").text(newTodolist.date);
